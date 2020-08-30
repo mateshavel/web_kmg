@@ -1,0 +1,48 @@
+/* CEZET Map v2.3
+ * 17.3.2013 (c) Moravio.com
+ * Licence CC BY
+ */
+
+.cezetmap{
+	/* width & height ratio: 1.734 */
+	width: 475px;
+	/* 370 / 1.734 = 213.39 */
+	height: 273.93px;
+}
+
+.cezetmap .kraje{
+	/* musi byt stejne jako sirka (width) elementu cezetmap */
+	font-size: 475px;
+	/*background: #F9F9F9;*/
+	text-shadow:
+			-3px -3px 1px #FFF,
+			3px -3px 0 #FFF,
+			-3px 3px 1px #FFF,
+			3px 3px 0 #FFF;
+}
+
+.display-none-kraj{
+	display: none;
+}
+.koordinator{
+/*background-color: #fff;*/
+}
+
+
+.cezetmap .zlinsky                   { color: #EBEBEB; }
+.cezetmap .moravskoslezsky           { color: #EBEBEB; }
+.cezetmap .jihomoravsky              { color: #EBEBEB; }
+.cezetmap .olomoucky                 { color: #EBEBEB; }
+.cezetmap .vysocina                  { color: #EBEBEB; }
+.cezetmap .pardubicky                { color: #EBEBEB; }
+.cezetmap .kralovehradecky           { color: #EBEBEB; }
+.cezetmap .jihocesky                 { color: #EBEBEB; }
+.cezetmap .hlavni-mesto-praha        { color: #EBEBEB; }
+.cezetmap .stredocesky               { color: #EBEBEB; }
+.cezetmap .liberecky                 { color: #EBEBEB; }
+.cezetmap .plzensky                  { color: #EBEBEB; }
+.cezetmap .ustecky                   { color: #EBEBEB; }
+.cezetmap .karlovarsky               { color: #EBEBEB; }
+
+.cezetmap .kraj_hover                { color: #8E8E8E; }
+.cezetmap .kraj_active               { color: #D08632; }
