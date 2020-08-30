@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#"/>
+    <link rel="icon" type="image/png" href="#" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="#" sizes="16x16"/>
+    <link rel="manifest" href="KravMaga/media/KravMaga/Images/manifest.json"/>
+    <title>KRAV MAGA Global</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/cezetmap.css"/>
+    <link rel="stylesheet" href="css/cezetmap.custom.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/facebook-sdk.js"></script>
+</head>
+<body>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<!-- HEADER -->
+<header>
+    <!-- Top Menu -->
+    <nav data-include="partials/top-menu.html"></nav>
+    <!-- Main Menu -->
+    <nav data-include="partials/main-menu.html"></nav>
+    <!-- Breadcrumbs -->
+    <div class="container breadcrumbs-wrapper">
+        <nav class="breadcrumb">
+            <!--<a class="breadcrumb-item" href="#">Home</a>-->
+            <span class="breadcrumb-item active">Index:</span><br/>
+            <ul class="list-unstyled float-left mt-3 ml-4">
+                <li class="pb-2"><a href="homepage.html">- Homepage</a></li>
+                <li class="pb-2"><a href="homepage-swipe.html">- Homepage Swipe</a></li>
+                <li class="pb-2"><a href="about-us.html">- O nás</a></li>
+                <li class="pb-2"><a href="courses.html">- Kurzy</a></li>
+                <li class="pb-2 pl-3"><a href="courses-detail.html"><small>- Kurzy detail</small></a></li>
+                <li class="pb-2"><a href="clubs.html">- Kluby</a></li>
+                <li class="pb-2 pl-3"><a href="clubs-region.html"><small>- Kluby dle kraje</small></a></li>
+                <li class="pb-2 pl-3"><a href="clubs-detail.html"><small>- Kluby detail</small></a></li>
+                <li class="pb-2"><a href="javascript:void(0)" data-toggle="modal" data-target="#e-book">- Pop-Up</a></li>
+                <li class="pb-2"><a href="404.html">- 404 page</a></li>
+                <li class="pb-2"><a href="article-detail.html">- Article detail</a></li>
+                <li class="pb-2"><a href="my-account-edit.html">- Můj profil</a></li>
+                <li class="pb-2 pl-3"><a href="my-events.html"><small>- Moje akce</small></a></li>
+                <li class="pb-2"><a href="registration.html">- Registrace</a></li>
+                <li class="pb-2"><a href="javascript:void(0)" data-toggle="modal" data-target="#modal-login">- Login</a></li>
+                <li class="pb-2"><a href="event-detail.html">- Akce detail</a></li>
+                <li class="pb-2"><a href="event-pay.html">- Akce platba</a></li>
+                <li class="pb-2 pl-3"><a href="javascript:void(0)" data-toggle="modal" data-target="#event-pay-cancel"><small>- Zrušit účast</small></a></li>
+                <li class="pb-2"><a href="calendar.html">- Kalendář akcí</a></li>
+                <li class="pb-2"><a href="multimedia.html">- Multimédia</a></li>
+                <li class="pb-2"><a href="blog.html">- Blog</a></li>
+                <li class="pb-2"><a href="contact.html">- Kontakt</a></li>
+                <li class="pb-2"><a href="contact-with-form.html">- Kontakt with form</a></li>
+                <li class="pb-2"><a href="search-results.html">- Search Results</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="content-wrapper" style="height: 1100px; background-color: #2c1b0c;">
+    <!-- Main teaser -->
+    <section class="jumbotron jumbotron-fluid main-teaser homepage">
+        <img class="img-fluid" src="KravMaga/media/KravMaga/Images/bg-home-mask-hd.jpg" alt=""/>
+    </section>
+
+    <!-- Modal -->
+    <section class="popup">
+        <div data-include="partials/ebook-modal.html"></div>
+    </section>
+
+    <!-- Modal Event Pay Cancel -->
+    <section class="popup">
+        <div data-include="partials/modal-event-pay-cancel.html"></div>
+    </section>
+
+    <!-- Modal Login -->
+    <section class="popup">
+        <div data-include="partials/modal-login.html"></div>
+    </section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <!-- Footer top part -->
+            <div class="footer-top row pt-5">
+                <!-- Newsletter form -->
+                <div class="newsletter-abo col-md-6 pb-4">
+                    <h5 class="pb-3">Přihlásit k novinkám</h5>
+                    <div data-include="partials/newsletter-form.html"></div>
+                </div>
+                <!-- Facebook likes -->
+                <div class="facebook-like col-md-6 pb-4">
+                    <h5 class="pb-3">Sledujte nás</h5>
+                    <div data-include="partials/facebook-likes.html"></div>
+                </div>
+                <div class="footer-line ml-md-3 mr-md-3 mt-md-4"></div>
+            </div>
+            <!-- Footer bottom part -->
+            <div data-include="partials/footer-bottom.html"></div>
+        </div>
+    </section>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-custom.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/popper.1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox-3.1.20.min.js"></script>
+<script src="js/cezetmap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

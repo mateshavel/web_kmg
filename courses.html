@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#"/>
+    <link rel="icon" type="image/png" href="#" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="#" sizes="16x16"/>
+    <link rel="manifest" href="KravMaga/media/KravMaga/Images/manifest.json"/>
+    <title>KRAV MAGA Global</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/cezetmap.css"/>
+    <link rel="stylesheet" href="css/cezetmap.custom.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/facebook-sdk.js"></script>
+</head>
+<body>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<!-- HEADER -->
+<header>
+    <!-- Top Menu -->
+    <nav data-include="partials/top-menu.html"></nav>
+    <!-- Main Menu -->
+    <nav data-include="partials/main-menu.html"></nav>
+    <!-- Breadcrumbs -->
+    <div class="container breadcrumbs-wrapper">
+        <nav class="breadcrumb">
+            <!--<a class="breadcrumb-item" href="#">Home</a>-->
+            <span class="breadcrumb-item active">Kurzy</span>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="content-wrapper subpage courses">
+    <!-- Scroll to top link -->
+    <a href="#" class="scrollup"></a>
+
+    <!-- Main teaser -->
+    <section class="jumbotron jumbotron-fluid main-teaser homepage">
+        <img class="img-fluid" src="KravMaga/media/KravMaga/Images/km-courses-bg.jpg" alt=""/>
+        <div class="container d-flex flex-md-row justify-content-between">
+            <div class="rectangle">
+                <h1 class="headline-big">
+                    <a href="#">Kurzy pro ženy</a>
+                </h1>
+            </div>
+        </div>
+        <div class="container d-lg-flex justify-content-lg-start">
+            <!-- Subpage Anchor Menu -->
+            <!--<div data-include="partials/subpage-anchor-menu.html"></div>-->
+            <ul class="list-unstyled list-inline anchor-menu d-flex flex-wrap flex-row">
+                <li class="nav-item">
+                    <a href="#popis-anch" class="nav-link">Popis</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#akce-anch" class="nav-link">Top akce pro ženy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kurzy-anch" class="nav-link">Kurzy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt-anch" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <div class="course-menu-wrapper container d-lg-flex justify-content-lg-end">
+            <!-- Course menu subpage -->
+            <!--<div data-include="partials/course-menu.html"></div>-->
+        </div>
+    </section>
+
+    <!-- description-courses -->
+    <section id="popis-anch" class="description-courses mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3">Popis</span></h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-7">
+                    <p>Ať už je vaší motivací zvýšení bezpečnosti nebo hledáte pravidelný pohyb, tréninky Krav Maga vám
+                        poskytnou jak důkladnou fyzickou, tak i psychickou přípravu a relevantní informace, které
+                        pomohou zvýšit bezpečí vám i vašim blízkým. Systém sebeobrany Krav Maga je vhodný pro každého
+                        nezávisle na věku nebo jakýchkoliv fyzických předpokladech.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=dV9WYnYUM2k&t=10s&autoplay=1">
+                        <img class="w-100 img-shadow img-fluid" src="KravMaga/media/KravMaga/Images/videoup.png"
+                             alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akce -->
+    <section id="akce-anch" class="blog events mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3">Top</span> Akce pro ženy</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div data-include="partials/blog.html"></div>
+            <div class="row text-center show-all">
+                <div class="col">
+                    <a href="#">Zobrazit starší</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Klub map -->
+    <section id="" class="google-map mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3">Kluby pro ženy</span> ve vašem okolí</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div id="map" style="width: 100%; height: 600px; position: relative; overflow: hidden;"></div>
+    </section>
+
+    <!-- contact-courses -->
+    <section id="kontakt-anch" class="contact-courses mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3">Kontakt</span></h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="text-center mb-5">
+                        <img class="img-fluid mx-auto d-block rounded-circle"
+                             src="KravMaga/media/KravMaga/Images/instructors/jakubnovak.png" alt="">
+                        <ul class="list-unstyled mt-4">
+                            <li class="font-weight-bold fs-18">Jakub Otipka</li>
+                            <li>KM Stupeň Expert 2</li>
+                            <li class="mb-3">CertifikaceCivil, L-E, VIP, Women, Kids</li>
+                            <li>Telefon: <strong>+420 728 086 974</strong></li>
+                            <li>Email: <span class="org-under">jakub@krav-maga.cz</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="col-md-1"></div>-->
+                <div class="col-md-6">
+                    <p class="sm-tit">Kontaktní formulář</p>
+                    <div class="form-group mb-3">
+                        <div class="inner-addon right-addon">
+                            <i class="fa fa-envelope blue-form"></i>
+                            <input type="email" class="form-control input-custom" placeholder="E-mail"/>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="inner-addon right-addon">
+                            <i class="fa fa-user blue-form"></i>
+                            <input type="text" class="form-control input-custom" placeholder="Jméno a příjmení"/>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <textarea class="form-control textarea-custom" rows="6"
+                                  placeholder="Sem napište zprávu..."></textarea>
+                    </div>
+                    <!--zde bude reCaptcha-->
+                    <img class="img-fluid mb-3" src="KravMaga/media/KravMaga/Images/recaptcha.PNG" alt="">
+                    <input type="submit" class="btn btn-custom-form shadow mb-3" value="Odeslat"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="sponsors">
+        <div class="container">
+            <div data-include="partials/sponsors.html"></div>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <!-- Footer top part -->
+            <div class="footer-top row pt-5">
+                <!-- Newsletter form -->
+                <div class="newsletter-abo col-md-6 pb-4">
+                    <h5 class="pb-3">Přihlásit k novinkám</h5>
+                    <div data-include="partials/newsletter-form.html"></div>
+                </div>
+                <!-- Facebook likes -->
+                <div class="facebook-like col-md-6 pb-4">
+                    <h5 class="pb-3">Sledujte nás</h5>
+                    <div data-include="partials/facebook-likes.html"></div>
+                </div>
+                <div class="footer-line ml-md-3 mr-md-3 mt-md-4"></div>
+            </div>
+            <!-- Footer bottom part -->
+            <div data-include="partials/footer-bottom.html"></div>
+        </div>
+    </section>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-custom.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/popper.1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox-3.1.20.min.js"></script>
+<script src="js/cezetmap.js"></script>
+<script src="js/google-map.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHE6GSONADflMuW5kGEwv7SzuLdFZgxjY&callback=initMapCluster"
+        type="text/javascript"></script>
+
+<!--<script async defer-->
+        <!--src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM9uk-pzfyaldcoXwLe53nYjf5ysTJdxo&callback=initMap"-->
+        <!--type="text/javascript"></script>-->
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#"/>
+    <link rel="icon" type="image/png" href="#" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="#" sizes="16x16"/>
+    <link rel="manifest" href="KravMaga/media/KravMaga/Images/manifest.json"/>
+    <title>KRAV MAGA Global</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/cezetmap.css"/>
+    <link rel="stylesheet" href="css/cezetmap.custom.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/facebook-sdk.js"></script>
+</head>
+<body class="multimedia-page">
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<!-- HEADER -->
+<header>
+    <!-- Top Menu -->
+    <nav data-include="partials/top-menu.html"></nav>
+    <!-- Main Menu -->
+    <nav data-include="partials/main-menu.html"></nav>
+    <!-- Breadcrumbs -->
+    <div class="container breadcrumbs-wrapper">
+        <nav class="breadcrumb">
+            <!--<a class="breadcrumb-item" href="#">Home</a>-->
+            <span class="breadcrumb-item active">Kluby</span>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="content-wrapper subpage courses">
+
+    <!-- Main teaser -->
+    <section class="jumbotron jumbotron-fluid main-teaser homepage">
+        <img class="img-fluid grayscale" src="KravMaga/media/KravMaga/Images/km-clubs-sw-bg.jpg" alt=""/>
+        <div class="container d-flex flex-md-row justify-content-between">
+            <div class="rectangle">
+                <h1 class="headline-big">
+                    <a href="#">Multimédia</a>
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- filters -->
+    <section class="multimedia-filters filters mt-5">
+        <div class="container">
+            <div class="form-inline">
+                <label class="custom-control-inline bold-text" for="inlineFormCustomSelect">Kategorie: </label>
+                <select class="custom-select form-control mr-md-3" id="inlineFormCustomSelect">
+                    <option value="adults" selected>Dospělí</option>
+                    <option value="women">Ženy</option>
+                    <option value="kids">Děti</option>
+                    <option value="army">Ozbrojené složky</option>
+                    <option value="companies">Firmy</option>
+                </select>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label bold-text" for="customCheck1">Fotky</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="input custom-control-input" id="customCheck2" checked>
+                    <label class="custom-control-label bold-text" for="customCheck2">Videa</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia masonry cards -->
+    <section class="multimedia blog events  pt-5 pb-5 mb-5">
+        <div class="container">
+            <div data-include="partials/multimedia-masonry.html"></div>
+            <div class="row text-center show-all">
+                <div class="col">
+                    <a href="#">Dalších 20 akcí</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="sponsors">
+        <div class="container">
+            <div data-include="partials/sponsors.html"></div>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <!-- Footer top part -->
+            <div class="footer-top row pt-5">
+                <!-- Newsletter form -->
+                <div class="newsletter-abo col-md-6 pb-4">
+                    <h5 class="pb-3">Přihlásit k novinkám</h5>
+                    <div data-include="partials/newsletter-form.html"></div>
+                </div>
+                <!-- Facebook likes -->
+                <div class="facebook-like col-md-6 pb-4">
+                    <h5 class="pb-3">Sledujte nás</h5>
+                    <div data-include="partials/facebook-likes.html"></div>
+                </div>
+                <div class="footer-line ml-md-3 mr-md-3 mt-md-4"></div>
+            </div>
+            <!-- Footer bottom part -->
+            <div data-include="partials/footer-bottom.html"></div>
+        </div>
+    </section>
+</footer>
+<script src="https://www.youtube.com/player_api"></script>
+<script src="js/yt-video.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-custom.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/popper.1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox-3.1.20.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

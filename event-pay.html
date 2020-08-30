@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#"/>
+    <link rel="icon" type="image/png" href="#" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="#" sizes="16x16"/>
+    <link rel="manifest" href="KravMaga/media/KravMaga/Images/manifest.json"/>
+    <title>KRAV MAGA Global</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/cezetmap.css"/>
+    <link rel="stylesheet" href="css/cezetmap.custom.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/facebook-sdk.js"></script>
+</head>
+<body>
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<!-- HEADER -->
+<header>
+    <!-- Top Menu -->
+    <nav data-include="partials/top-menu.html"></nav>
+    <!-- Main Menu -->
+    <nav data-include="partials/main-menu.html"></nav>
+    <!-- Breadcrumbs -->
+    <div class="container breadcrumbs-wrapper">
+        <nav class="breadcrumb">
+            <!--<a class="breadcrumb-item" href="#">Kurzy</a>-->
+            <span class="breadcrumb-item active">Akce</span>
+        </nav>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="content-wrapper subpage courses">
+    <!-- Scroll to top link -->
+    <a href="#" class="scrollup"></a>
+
+    <!-- Main teaser -->
+    <section class="jumbotron jumbotron-fluid main-teaser homepage">
+        <img class="img-fluid" src="KravMaga/media/KravMaga/Images/km-courses-bg.jpg" alt=""/>
+        <div class="container d-flex flex-md-row justify-content-between">
+            <div class="rectangle">
+                <h1 class="headline-big">
+                    <a href="#">SEMINÁŘ BEZPEČÍ PRO SENIORY</a>
+                </h1>
+            </div>
+        </div>
+        <div class="container d-lg-flex justify-content-lg-start">
+            <!-- Subpage Anchor Menu -->
+            <!--<div data-include="partials/subpage-detail-anchor-menu.html"></div>-->
+        </div>
+        <div class="course-menu-wrapper container d-lg-flex justify-content-lg-end">
+            <!-- Course menu subpage -->
+            <!--<div data-include="partials/course-menu.html"></div>-->
+        </div>
+    </section>
+
+    <!-- time of the event -->
+    <section class="time-of-the-event mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col ">
+                    <a href="#pay-anch" class="anchor-btn">
+                        <button type="button" class="btn btn-block btn-pay shadow">Zaplatit</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <span><strong>Začátek:</strong></span>
+                    <p>03.11.2017 10:00</p>
+
+                    <span><strong>Konec:</strong></span>
+                    <p>03.11.2017 12:00</p>
+
+                    <span><strong>Místo konání:</strong></span>
+                    <p>Krav-Maga Club - Praha 7, Dělnická 41</p>
+
+                    <p class="or-t">Úvodní seminář speciálně zaměřený na problematiku sebeobrany a bezpečného chování
+                        seniorů.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- event payment -->
+    <section id="pay-anch" class="event-payment mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3"></span>Platba: Seminář Bezpečí pro seniory</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <!--varianta: no-pay Nezaplaceno / yes-color Zaplaceno-->
+                    <p class="f-o-18-b"><strong>Stav: <span class="no-color">Nezaplaceno</span></strong></p>
+                    <p>Prosíme, vyplňte následující údaje pro přihlášení na seminář.
+                        Pokud není uvedeno jinak, jsou přihlášky závazné.
+                        Pokud máte uživatelský účet, tak se prosím přihlašte, přihláška pak bude automaticky vyplněna
+                        údaji zadanými při registraci.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <!--<input role="button" class="btn btn-custom" value="Zaplatit"/>-->
+                    <button type="button" class="btn btn-custom mb-3 mr-2">Zaplatit</button>
+                    <button type="button" class="btn btn-custom-reverse mb-3 mr-2">Zrušit účast</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google map Event  -->
+    <section class=" mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3"></span>Mapa akce</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div id="map" style="width: 100%; height: 250px; position: relative; overflow: hidden;"></div>
+    </section>
+
+    <!-- detail-informations -->
+    <section class="detail-informations mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left headline">
+                    <h3><span class="h3"></span>Podrobné informace</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7 offset-sm-1">
+                    <p>V rámci projektu BEZPEČÍ PRO SENIORY pořádaného ve spolupráci s Magistrátem hl.m. Prahy jsme
+                        připravili
+                        praktický kurz, během kterého se účastníci seznámí se základními principy bezpečného chování.
+                        Naučíte se
+                        jak se vyhnout nebezpečným situacím a jak případné již nastalé krizové situace řešit.</p>
+
+                    <p>Systém Krav Maga je přizpůsoben tomu, aby jej byli schopni trénovat a také používat obyčejní lidé
+                        různých fyzických dispozic, různého věku, mladí i staří, muži i ženy. Tento kurz je ZDARMA a je
+                        specificky zaměřen pro seniory.
+                        Krav Maga Global se zabývá osobní bezpečností již několik let a kromě projektu Bezpečí pro
+                        seniory
+                        je
+                        realizátorem úspěšného projektu Nenechte si ubližovat, který má za cíl zvýšit bezpečnost žen a
+                        bojuje
+                        proti násilí na ženách.</p>
+
+                    <span>Instruktor<br>
+                        Václav Folejtar</span>
+                    <ul>
+                        <li>člen instruktorského týmu Krav Maga Academy</li>
+                        <li>graduate level 2</li>
+                        <li>civil instructor</li>
+                        <li>kids instructor</li>
+                    </ul>
+
+                    <span>Místo:</span>
+                    <ul>
+                        <li>Krav Maga Academy</li>
+                        <li>Na Pankráci 32, Praha 4, 140 00</li>
+                        <li><a href="#" class="redi">odkaz na MAPU</a></li>
+                        <li>Vstup je cca 20 metrů nalevo od vchodu domu č. 32.</li>
+                    </ul>
+
+                    <span>Čas:</span>
+                    <ul>
+                        <li>3. listopadu 2017 - 10:00-12:00</li>
+                        <li>Během semináře bude vyhrazen čas na občerstvení.</li>
+                    </ul>
+
+                    <span>Potřebné vybavení:</span>
+                    <ul>
+                        <li>Pohodlně oblečení a obuv</li>
+                    </ul>
+
+                    <p>Účast je zdarma, občerstvení zajištěno! Pro přihlášení prosíme využijte modré tlačítko Přihlásit
+                        se
+                        na
+                        seminář.</p>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="row mb-5">
+                        <div class="col text-center">
+                            <img class="" src="KravMaga/media/KravMaga/Images/jakubotipka.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <img class="" src="KravMaga/media/KravMaga/Images/event-4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="sponsors">
+        <div class="container">
+            <div data-include="partials/sponsors.html"></div>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <section class="footer">
+        <div class="container">
+            <!-- Footer top part -->
+            <div class="footer-top row pt-5">
+                <!-- Newsletter form -->
+                <div class="newsletter-abo col-md-6 pb-4">
+                    <h5 class="pb-3">Přihlásit k novinkám</h5>
+                    <div data-include="partials/newsletter-form.html"></div>
+                </div>
+                <!-- Facebook likes -->
+                <div class="facebook-like col-md-6 pb-4">
+                    <h5 class="pb-3">Sledujte nás</h5>
+                    <div data-include="partials/facebook-likes.html"></div>
+                </div>
+                <div class="footer-line ml-md-3 mr-md-3 mt-md-4"></div>
+            </div>
+            <!-- Footer bottom part -->
+            <div data-include="partials/footer-bottom.html"></div>
+        </div>
+    </section>
+</footer>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-custom.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/popper.1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox-3.1.20.min.js"></script>
+<script src="js/cezetmap.js"></script>
+<script src="js/google-map.js"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHE6GSONADflMuW5kGEwv7SzuLdFZgxjY&callback=initMapCluster"
+        type="text/javascript"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

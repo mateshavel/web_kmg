@@ -1,0 +1,104 @@
+ po kliknutí na li mapa plynule přeskočí na daný kraj
+
+ <html>
+
+ <ul class="list-unstyled region-list">
+     <li><a href="/clubs-region.html" class="map-zoom" data-region="0">Jihočeský kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="1">Jihomoravský kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="2">Karlovarský kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="3">Královéhradecký kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="4">Liberecký kraj</a></li>
+
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="5">Moravskoslezský kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="6">Olomoucký kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="7">Pardubický kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="8">hl.m. Praha</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="9">Plzeňský kraj</a></li>
+
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="10">Středočeský kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="11">Ústecký kraj</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="12">Kraj Vysočina</a></li>
+ <li><a href="/clubs-region.html" class="map-zoom" data-region="13">Zlínský Kraj</a></li>
+ </ul>
+
+</html>
+<scripts>
+
+ 'use strict';
+
+ var dataRegions = [
+     {country: 'Jihočeský kraj', zoom: 9, lat: 49.0860746, lng: 14.0098258},
+     {country: 'Jihomoravský kraj', zoom: 9, lat: 49.115007, lng: 16.693726},
+     {country: 'Karlovarský kraj', zoom: 9, lat: 50.153806, lng: 12.716675},
+     {country: 'Královéhradecký kraj', zoom: 9, lat: 50.413550, lng: 15.814819},
+     {country: 'Liberecký kraj', zoom: 9, lat: 50.741452, lng: 14.913940},
+     {country: 'Moravskoslezský kraj', zoom: 9, lat: 49.8598178, lng: 17.4423615},
+     {country: 'Olomoucký kraj', zoom: 9, lat: 49.672738, lng: 17.133179},
+     {country: 'Pardubický kraj', zoom: 9, lat: 49.885566, lng: 16.089478},
+     {country: 'Kraj Praha', zoom: 11, lat: 50.062208, lng: 14.474487},
+     {country: 'Plzeňský kraj', zoom: 9, lat: 49.622944, lng: 13.134155},
+     {country: 'Středočeský kraj', zoom: 8, lat: 50.005753, lng: 14.551392},
+     {country: 'Ústecký kraj', zoom: 9, lat: 50.490498, lng: 13.760376},
+     {country: 'Kraj Vysočina', zoom: 9, lat: 49.430403, lng: 15.584106},
+     {country: 'Zlínský kraj', zoom: 9, lat: 49.215579, lng: 17.803345}
+ ];
+
+ var map;
+
+ function initMap() {
+     var uluru = {lat: 49.885566, lng: 15.584106};
+     map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 7,
+         center: uluru,
+         styles: [{
+             stylers: [{
+                 saturation: -100
+             }]
+         }]
+     });
+     var marker = new google.maps.Marker({
+         position: clubs,
+         map: map,
+         icon: 'KravMaga/media/KravMaga/Images/pin-map.png'
+     });
+
+     //pozice klubů, title, url
+     var clubs = [
+         {position: new google.maps.LatLng(50.060965, 14.437323), title: 'Nazev1', url: '/KMGlobal/clubs-detail.html'},
+         {
+             position: new google.maps.LatLng(50.075289, 14.423246),
+             title: 'Nazev2',
+             url: '/KMGlobal/test-url-clubs-detail.html'
+         },
+         {position: new google.maps.LatLng(49.734133, 18.113708), title: 'Nazev3', url: '/KMGlobal/clubs-detail.html'},
+         {position: new google.maps.LatLng(48.917874, 16.410828), title: 'Nazev4', url: '/KMGlobal/clubs-detail.html'},
+         {position: new google.maps.LatLng(50.137195, 12.988586), title: 'Nazev5', url: '/KMGlobal/clubs-detail.html'},
+         {position: new google.maps.LatLng(50.072094, 14.502554), title: 'Nazev6', url: '/KMGlobal/clubs-detail.html'}
+     ];
+     clubs.forEach(function (club) {
+         var marker = new google.maps.Marker({
+             position: club.position,
+             url: club.url,
+             title: club.title,
+             icon: 'KravMaga/media/KravMaga/Images/pin-map.png',
+             map: map
+         });
+         //funkce na přesměrování
+         google.maps.event.addListener(marker, 'click', function () {
+             window.location.href = this.url;
+         });
+     });
+
+ }
+
+ //vezme pozici a zoom z dataRegions
+ function newLocation(newLat, newLng, zoom) {
+     map.setCenter({
+         lat: newLat,
+         lng: newLng
+     });
+
+     map.setZoom(zoom);
+ }
+
+</scripts>
