@@ -1,0 +1,156 @@
+<!-- Desktop map -->
+<div class="d-none d-lg-flex justify-content-lg-center">
+    <div class="col-lg-6 left-part mx-auto">
+        <h2 class="text-center">Vyhledat kluby v Okolí</h2>
+        <div class="line-center"></div>
+        <div class="cezetmap_area d-none d-md-block">
+            <div class="cezetmap">
+                <ul class="kraje">
+                    <li class="kraj zlinsky">
+                        <a href="?kraj=zlinsky" title="Zlínský kraj">
+                            Zlínský kraj
+                        </a>
+                    </li>
+                    <li class="kraj moravskoslezsky">
+                        <a href="?kraj=moravskoslezsky" title="Moravskoslezský kraj">
+                            Moravskoslezský kraj
+                        </a>
+                    </li>
+                    <li class="kraj jihomoravsky">
+                        <a href="?kraj=jihomoravsky" title="Jihomoravský kraj">
+                            Jihomoravský kraj</a>
+                    </li>
+                    <li class="kraj olomoucky">
+                        <a href="?kraj=olomoucky" title="Olomoucký kraj">
+                            Olomoucký kraj
+                        </a>
+                    </li>
+                    <li class="kraj vysocina">
+                        <a href="?kraj=vysocina" title="Kraj Vysočina">
+                            Kraj Vysočina
+                        </a>
+                    </li>
+                    <li class="kraj pardubicky">
+                        <a href="?kraj=pardubicky" title="Pardubický kraj">
+                            Pardubický kraj</a>
+                    </li>
+                    <li class="kraj kralovehradecky">
+                        <a href="?kraj=kralovehradecky" title="Královehradecký kraj">
+                            Královehradecký kraj</a>
+                    </li>
+                    <li class="kraj jihocesky">
+                        <a href="?kraj=jihocesky" title="Jihočeský kraj">
+                            Jihočeský kraj
+                        </a>
+                    </li>
+                    <li class="kraj hlavni-mesto-praha">
+                        <a href="?kraj=praha" title="Hlavní město Praha">
+                            Praha
+                        </a>
+                    </li>
+                    <li class="kraj stredocesky kraj_active">
+                        <a href="?kraj=stredocesky" title="Středočeský kraj">
+                            Středočeský kraj</a>
+                    </li>
+                    <li class="kraj liberecky">
+                        <a href="?kraj=liberecky" title="Liberecký kraj">
+                            Liberecký kraj</a>
+                    </li>
+                    <li class="kraj plzensky">
+                        <a href="?kraj=plzensky" title="Plzeňský kraj">
+                            Plzeňský kraj
+                        </a>
+                    </li>
+                    <li class="kraj ustecky">
+                        <a href="?kraj=ustecky" title="Ústecký kraj">
+                            Ústecký kraj
+                        </a>
+                    </li>
+                    <li class="kraj karlovarsky">
+                        <a href="?kraj=karlovarsky" title="Karlovarský kraj">
+                            Karlovarský kraj
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 text-left">
+        <div class="clubs-list">
+            <div class="koordinator stredocesky">
+                <h4>Středočeský kraj</h4>
+                <span class="line-gray"></span>
+                <ul class="list-unstyled">
+                    <li><a class="text-left" href="#">Klub Krav Maga Kladno<span class="clublist-btn"></span></a></li>
+                    <li><a class="text-left" href="#">Klub Maga Davle<span class="clublist-btn"></span></a></li>
+                    <li><a href="#">Klub Krav Maga Kladno<span class="clublist-btn"></span></a></li>
+                    <li><a href="#">Klub Maga Davle<span class="clublist-btn"></span></a></li>
+                    <li><a href="#">Krav Maga Brniště<span class="clublist-btn"></span></a></li>
+                </ul>
+            </div>
+            <div class="koordinator jihomoravsky display-none-kraj">
+                <h4>Jihomoravský kraj</h4>
+                <ul class="list-unstyled">
+                    <li><a class="text-left" href="#">Klub Krav Maga Brno</a></li>
+                    <li><a class="text-left" href="#">Klub HEDR Vyškov</a></li>
+                </ul>
+            </div>
+            <div class="koordinator hlavni-mesto-praha display-none-kraj">
+                <h4>Praha</h4>
+                <ul class="list-unstyled">
+                    <li><a class="text-left" href="clubs-detail.html">Krav Maga Global Praha<span class="clublist-btn"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile dropdown -->
+<div class="d-lg-none d-block club-selctor-mobile">
+    <h2 class="text-left">Vyhledat kluby</h2>
+    <div class="line"></div>
+    <div class="km-custom-select">
+        <select id="clubs-select" class="form-control form-control-lg custom-select mb-3">
+            <option value="jihocesky">Jihočeský kraj</option>
+            <option value="jihomoravsky">Jihomoravský kraj</option>
+            <option value="karlovarsky">Karlovarský kraj</option>
+            <option value="kralovehradecky">Královéhradecký kraj</option>
+            <option value="vysocina">Kraj Vysočina</option>
+            <option value="liberecky">Liberecký kraj</option>
+            <option value="moravskoslezsky">Moravskoslezský kraj</option>
+            <option value="olomoucky">Olomoucký kraj</option>
+            <option value="pardubicky">Pardubický kraj</option>
+            <option value="plzensky">Plzeňský kraj</option>
+            <option value="hlavni-mesto-praha">Praha</option>
+            <option value="stredocesky" selected>Středočeský kraj</option>
+            <option value="ustecky">Ústecký kraj</option>
+            <option value="zlinsky">Zlínský kraj</option>
+        </select>
+    </div>
+    <div class="clubs-list">
+        <div class="koordinator stredocesky">
+            <h4>Středočeský kraj</h4>
+            <ul class="list-unstyled">
+                <li><a class="text-left" href="#">Klub Krav Maga Kladno</a></li>
+                <li><a class="text-left" href="#">Klub Maga Davle</a></li>
+                <li><a href="#">Klub Krav Maga Kladno</a></li>
+                <li><a href="#">Klub Maga Davle</a></li>
+                <li><a href="#">Krav Maga Brniště</a></li>
+            </ul>
+        </div>
+        <div class="koordinator jihomoravsky display-none-kraj">
+            <h4>Jihomoravský kraj</h4>
+            <ul class="list-unstyled">
+                <li><a class="text-left" href="#">Klub Krav Maga Brno</a></li>
+                <li><a class="text-left" href="#">Klub HEDR Vyškov</a></li>
+            </ul>
+        </div>
+        <div class="koordinator hlavni-mesto-praha display-none-kraj">
+            <h4>Praha</h4>
+            <ul class="list-unstyled">
+                <li><a class="text-left" href="clubs-detail.html">Krav Maga Global Praha</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,126 @@
+<style>
+    /* MODAL */
+    #event-pay-cancel .modal-title {
+        color: #FFF;
+        font-size: 62px;
+        font-weight: 900;
+        letter-spacing: -1px;
+        line-height: 63px;
+        border: none;
+    }
+
+    #event-pay-cancel .modal-content {
+        background-color: #F0F0F0;
+        overflow: hidden;
+        border: none;
+        border-radius: 0;
+    }
+
+    #event-pay-cancel .modal-content button {
+        z-index: 1;
+    }
+
+    #event-pay-cancel .close {
+        float: right;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 0;
+        color: black;
+        text-shadow: 0 0 0 #FFF;
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #event-pay-cancel .close:hover {
+        color: black;
+        opacity: .75;
+    }
+
+    #event-pay-cancel .modal-header .close {
+        padding: 1rem;
+        margin: 5px -25px -1rem auto;
+    }
+
+    #event-pay-cancel .modal-header {
+        border-bottom: none;
+        height: 50px;
+    }
+
+    #event-pay-cancel .modal-header,
+    #event-pay-cancel .modal-body{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @media (min-width: 992px) {
+        #event-pay-cancel .modal-header,
+        #event-pay-cancel .modal-body{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+
+    #event-pay-cancel .modal-title {
+        color: #333333;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    #event-pay-cancel .modal-body {
+        color: #444444;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    @media (min-width: 992px) {
+        #event-pay-cancel .modal-size {
+            max-width: 610px;
+        }
+        #event-pay-cancel .modal-header .close {
+            padding: 1rem;
+            margin: 5px -52px -1rem auto;
+        }
+    }
+
+    #event-pay-cancel .modal-footer {
+        border-top: none;
+        padding: 0;
+    }
+
+    #event-pay-cancel .btn-custom {
+        height: 45px;
+        border-radius: 5px;
+        background-color: #D08632;
+        color: #FFF;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: 600;
+        width: 227px;
+    }
+</style>
+
+<div class="modal" id="event-pay-cancel" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-size" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title mb-3">Zrušit účast?</h3>
+                <p>Určitě chcete zrušit svou účast na tomto semináři?</p>
+                <p><strong>Seminář bezpečí pro seniory 21. - 24. září 2018</strong></p>
+            </div>
+            <div class="modal-footer row mt-3 mb-4">
+                <div class="col text-center">
+                    <!--<input role="button" class="btn btn-custom" value="Zaplatit"/>-->
+                    <button type="button" class="btn btn-custom mb-3 mr-2">Zaplatit</button>
+                    <button type="button" class="btn btn-custom mb-3 mr-2">Zrušit účast</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
